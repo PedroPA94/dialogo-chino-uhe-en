@@ -345,7 +345,7 @@
           }).setHTML(
               '<h3 class="popupClass">' + uhe[plantIndex].name + '</h3>' +
               '<h4><b>Date operational</b>: ' + uhe[plantIndex].operation + '<br>' +
-              '<b>Power</b>: ' + geoJsonData.features[plantIndex].properties.power.slice(0, -3) + 'MW<br>' +
+              '<b>Power</b>: ' + geoJsonData.features[plantIndex].properties.power.slice(0, -3).replace(/\./, ',') + 'MW<br>' +
               '<b>River</b>: ' + uhe[plantIndex].river + '<br>' +
               '<b>Owner(s)</b>: ' + uhe[plantIndex].owner + '</h4>'))
           .addTo(map);
