@@ -291,7 +291,7 @@
           })
           .setHTML('<h3 class="popupClass">' + usina + '</h3>' +
                   '<h4><b>Date operational</b>: ' + year + '<br>' +
-                  '<b>Power</b>: ' + power.slice(0, -3) + 'MW<br>' + 
+                  '<b>Power</b>: ' + power.slice(0, -3).replace(/\./, ',')  + 'MW<br>' + 
                   '<b>River</b>: ' + river + '<br>' +
                   '<b>Owner(s)</b>: ' + owner + '</h4>')
           .setLngLat([longitude, latitude])
